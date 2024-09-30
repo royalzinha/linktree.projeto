@@ -108,3 +108,52 @@ a:hover {
     transition-duration: 0.3s;
     scale: 110%;
 }
+
+.resumo {
+    background-color: azure;
+    color: slateblue;
+    margin: 100px;
+    padding: 50px;
+    border-radius: 20px;
+
+}
+
+.titulo-subtitulo{
+    line-height: 18px;
+}
+
+.titulo {
+    font-size: 150%;
+}
+
+.informacoes-sobre {
+    padding-top: 25px;
+    padding-left: 30px;
+    line-height: 25px;
+    text-align: left;
+}
+
+.skills {
+    justify-content: center;
+    display: flex;
+    gap: 50px;
+    padding: 30px;
+}
+
+@media (min-width: 600px) {
+    .resumo .skills .informacoes{
+        margin-inline-start: 50%;
+    }
+}
+
+@media (min-width: 768px){
+
+.resumo, .informacoes, .skills {
+      background-size: 115%;
+      padding: 80px;
+      margin: 20px;
+      background-size: 50%;
+    }
+  
+    .portfolio-card:is(:hover, :focus) { background-size: 130%; } 
+}
